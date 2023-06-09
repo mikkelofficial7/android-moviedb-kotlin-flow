@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 32
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation kotlinDefault.stdlib
+    implementation kotlinDefault.coroutinesCore
+    implementation kotlinDefault.coroutinesAndroid
+
+    implementation androidX.appCompatX
+    implementation androidX.coreKtx
+
+    implementation androidX.recyclerX
+    implementation androidX.cardX
+    implementation androidX.fragmentKtx
+    implementation androidX.constraintLayout
+    implementation androidX.lifecycleExtensions
+    implementation androidX.lifecycleVmExt
+    implementation androidX.material
+
+    //network
+    implementation libraries.retrofit
+
+    // DI
+    implementation libraries.koinViewmodel
+    implementation libraries.javaxInject
+
+    //ssp
+    implementation libraries.ssp
+    implementation libraries.sdp
+}

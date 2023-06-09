@@ -7,10 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.moviedbapp.BuildConfig
 import com.example.moviedbapp.R
-import com.example.moviedbapp.constant.DateConstant
+import com.example.moviedbapp.base.constant.DateConstant
 import com.example.moviedbapp.databinding.ItemReviewBinding
 import com.example.moviedbapp.extension.changeDateFormat
-import com.example.moviedbapp.model.response.Review
+import com.example.moviedbapp.model.Review
 
 class MovieReviewAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var mList: ArrayList<Review> = arrayListOf()
@@ -47,7 +47,8 @@ class MovieReviewAdapter(val context: Context) : RecyclerView.Adapter<RecyclerVi
             itemBinding.apply {
                 Glide.with(context).load("${BuildConfig.BASE_IMAGE_URL}${review.author_details.avatar_path}").into(ivAvatar)
                 tvName.text = review.author.ifEmpty { review.author_details.username }
-                tvCreatedDate.text = context.getString(R.string.posted_at, review.created_at.changeDateFormat(DateConstant.ZONED_DATE, DateConstant.DATE_TIME))
+                tvCreatedDate.text = context.getString(R.string.posted_at, review.created_at.changeDateFormat(
+                    DateConstant.ZONED_DATE, DateConstant.DATE_TIME))
                 tvContent.text = review.content
                 tvRating.text = context.getString(R.string.rating, (review.author_details.rating ?: 0).toString())
             }

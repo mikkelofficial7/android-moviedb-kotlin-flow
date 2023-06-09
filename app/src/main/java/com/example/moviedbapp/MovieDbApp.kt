@@ -1,11 +1,11 @@
 package com.example.moviedbapp
 
 import android.app.Application
-import com.example.moviedbapp.koin.ApiModule
-import com.example.moviedbapp.koin.RepositoryModule
-import com.example.moviedbapp.koin.UseCaseModule
-import com.example.moviedbapp.koin.ViewModelModule
-import com.example.moviedbapp.koin.appmodule.mainAppModule
+import com.example.moviedbapp.di.koin.ApiModule
+import com.example.moviedbapp.di.koin.RepositoryModule
+import com.example.moviedbapp.di.koin.UseCaseModule
+import com.example.moviedbapp.di.koin.ViewModelModule
+import com.example.moviedbapp.di.koin.appmodule.MainAppModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -17,7 +17,7 @@ class MovieDbApp : Application() {
         startKoin {
             androidLogger(Level.ERROR)
             androidContext(this@MovieDbApp)
-            modules(mainAppModule, ApiModule.apiModule, RepositoryModule.repositoryModule,
+            modules(MainAppModule, ApiModule.apiModule, RepositoryModule.repositoryModule,
                 UseCaseModule.useCaseModule, ViewModelModule.viewModelModule
             )
         }

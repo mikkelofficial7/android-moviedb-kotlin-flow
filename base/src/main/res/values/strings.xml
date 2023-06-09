@@ -1,0 +1,5 @@
+<resources>
+    <string name="error_network">Jaringan sedang bermasalah. Silahkan coba kembali nanti</string>
+    <string name="error_server">Server sedang bermasalah. Silahkan coba kembali nanti</string>
+    <string name="error_not_found">Data memuat tidak ditemukan</string>
+</resources>

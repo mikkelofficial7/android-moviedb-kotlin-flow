@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MovieDBApp.iml" filepath="$PROJECT_DIR$/.idea/modules/MovieDBApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieDBApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieDBApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieDBApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieDBApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieDBApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieDBApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieDBApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieDBApp.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/MovieDBApp.base.iml" filepath="$PROJECT_DIR$/.idea/modules/base/MovieDBApp.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/MovieDBApp.base.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/base/MovieDBApp.base.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/MovieDBApp.base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/base/MovieDBApp.base.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/MovieDBApp.base.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/base/MovieDBApp.base.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.iml" filepath="$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.main.iml" filepath="$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MovieDBApp.network.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MovieDBApp.network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MovieDBApp.network.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MovieDBApp.network.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MovieDBApp.network.main.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MovieDBApp.network.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MovieDBApp.network.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MovieDBApp.network.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewmodel/MovieDBApp.viewmodel.iml" filepath="$PROJECT_DIR$/.idea/modules/viewmodel/MovieDBApp.viewmodel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewmodel/MovieDBApp.viewmodel.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/viewmodel/MovieDBApp.viewmodel.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewmodel/MovieDBApp.viewmodel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/viewmodel/MovieDBApp.viewmodel.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewmodel/MovieDBApp.viewmodel.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/viewmodel/MovieDBApp.viewmodel.unitTest.iml" />
+    </modules>
+  </component>
+</project>

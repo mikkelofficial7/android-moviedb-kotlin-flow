@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":network:androidTest" external.linked.project.path="$MODULE_DIR$/../../../network" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="noReflect" arg="true" />
+            <flagArg name="noStdlib" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="classpath">
+              <args>
+                <arg>$MODULE_DIR$/../../../network/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
+                <arg>$MODULE_DIR$/../../../model/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/a612b2984114ff2c6aae018b41645649/transformed/jetified-logging-interceptor-4.9.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/c293ccfa870e556f120d7886fff365d8/transformed/jetified-kotlin-stdlib-jdk8-1.7.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/d3ef79d3305cc4db585644de33f1ee53/transformed/jetified-retrofit2-kotlin-coroutines-adapter-0.9.2.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/284bf7640f8cf5f94bfc1d445b0f3f0e/transformed/jetified-kotlin-stdlib-jdk7-1.7.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/7437ef4bd466b8955db311d00b1752f9/transformed/jetified-converter-gson-2.9.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/b780acb8c47c907f2b9a83207de648ed/transformed/jetified-converter-moshi-2.9.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/be740ce0c3e4352800ee4dfb815fe1c5/transformed/jetified-retrofit-2.9.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/816e10c9ba3fc714bc57ef55971d0b13/transformed/jetified-okhttp-4.9.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/c548a4a7d14eecd76da1774a5c9e0ead/transformed/jetified-moshi-1.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/5044cbe16d789e71285451be8077b871/transformed/jetified-okio-jvm-2.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/ccd89fab264b548319c0f30f196983e5/transformed/jetified-kotlinx-coroutines-core-jvm-1.4.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/f3bcab02ac71f498bee0502e0a21de63/transformed/jetified-kotlin-stdlib-1.7.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/2f8c8c0c5e6dddf0319a59b1ad3a4570/transformed/jetified-kotlin-stdlib-common-1.7.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/3248a80a7cc78e26eb243a286d339828/transformed/jetified-annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/aebdc028b85381607c26e51820f6ee6e/transformed/jetified-gson-2.8.5.jar</arg>
+                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-32/android.jar</arg>
+                <arg>$USER_HOME$/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
+              </args>
+            </stringArg>
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../network/build/tmp/kotlin-classes/debugAndroidTest" />
+            <stringArg name="jvmTarget" arg="1.8" />
+            <stringArg name="moduleName" arg="network_debug" />
+            <stringArg name="apiVersion" arg="1.7" />
+            <stringArg name="languageVersion" arg="1.7" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="friendPaths">
+              <args>
+                <arg>$MODULE_DIR$/../../../network/build/tmp/kotlin-classes/debug</arg>
+                <arg>$MODULE_DIR$/../../../network/build/intermediates/javac/debug/classes</arg>
+                <arg>$MODULE_DIR$/../../../network/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginClasspaths" />
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../network/src/main/res;file://$MODULE_DIR$/../../../network/src/debug/res;file://$MODULE_DIR$/../../../network/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../network/build/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../network/src/androidTest/res;file://$MODULE_DIR$/../../../network/src/androidTestDebug/res;file://$MODULE_DIR$/../../../network/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../network/build/generated/res/resValues/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../network/build/generated/aidl_source_output_dir/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../network/build/generated/ap_generated_sources/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../network/build/generated/renderscript_source_output_dir/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../network/build/generated/res/resValues/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../network/build/generated/res/rs/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../network/build/generated/source/buildConfig/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../network/src/androidTest">
+      <sourceFolder url="file://$MODULE_DIR$/../../../network/src/androidTest/java" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../network/src/androidTestDebug" />
+    <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="MovieDBApp.model.main" scope="TEST" />
+    <orderEntry type="module" module-name="MovieDBApp.network.main" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:logging-interceptor:4.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:okhttp:4.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio:2.8.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.retrofit2:retrofit:2.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.retrofit2:converter-gson:2.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.gson:gson:2.8.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.retrofit2:converter-moshi:2.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.moshi:moshi:1.8.0" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="MovieDBApp.network.main" />
+</module>

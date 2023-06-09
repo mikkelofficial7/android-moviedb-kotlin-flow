@@ -5,10 +5,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.moviedbapp.BuildConfig
 import com.example.moviedbapp.R
 import com.example.moviedbapp.databinding.ItemVideoBinding
-import com.example.moviedbapp.model.response.Video
+import com.example.moviedbapp.model.Video
 
 class MovieVideoAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var mList: List<Video> = listOf()

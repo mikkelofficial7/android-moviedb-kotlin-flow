@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviedbapp.databinding.ItemGenreBinding
-import com.example.moviedbapp.model.response.Genre
+import com.example.moviedbapp.model.Genre
 
 class GenreAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var mList: List<Genre> = listOf()

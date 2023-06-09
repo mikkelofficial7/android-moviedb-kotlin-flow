@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("gradle.properties")))
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 32
+
+        buildConfigField "String", "API_KEY", localProperties['api_key']
+        buildConfigField "String", "BASE_URL_API", localProperties['base_api_url']
+        buildConfigField "String", "BASE_IMAGE_URL", localProperties['base_image_url']
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    // network
+    implementation libraries.okhttpLogging
+    implementation libraries.retrofit
+    implementation libraries.retrofitGson
+    implementation libraries.coroutineAdapter
+    implementation libraries.retrofitMoshi
+
+    api project(path: ':model')
+}

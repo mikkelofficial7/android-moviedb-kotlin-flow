@@ -1,18 +1,22 @@
 package com.example.moviedbapp.ui.reviewrating
 
 import android.os.Bundle
+import android.os.Parcel
+import android.os.Parcelable
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviedbapp.R
-import com.example.moviedbapp.base.BaseActivityVM
 import com.example.moviedbapp.databinding.ActivityRatingBinding
 import com.example.moviedbapp.extension.observe
-import com.example.moviedbapp.helper.EndlessRecyclerViewScrollListener
-import com.example.moviedbapp.model.response.MovieReviewResponse
+import com.example.moviedbapp.model.MovieReviewResponse
+import com.example.moviedbapp.base.baseview.BaseActivityVM
+import com.example.moviedbapp.base.helper.EndlessRecyclerViewScrollListener
+import com.example.moviedbapp.viewmodel.ReviewActivityVM
 
-class ReviewActivity : BaseActivityVM<ActivityRatingBinding, ReviewActivityVM>(ReviewActivityVM::class) {
+class ReviewActivity() : BaseActivityVM<ActivityRatingBinding, ReviewActivityVM>(ReviewActivityVM::class),
+    Parcelable {
     private val movieId by lazy {
         intent.getLongExtra("MOVIE_ID", 0)
     }
@@ -22,6 +26,10 @@ class ReviewActivity : BaseActivityVM<ActivityRatingBinding, ReviewActivityVM>(R
     }
 
     private var scrollListener: EndlessRecyclerViewScrollListener? = null
+
+    constructor(parcel: Parcel) : this() {
+
+    }
 
     override fun bindToolbar(): Toolbar? = viewBinding?.appbar?.toolbar
 
@@ -67,6 +75,24 @@ class ReviewActivity : BaseActivityVM<ActivityRatingBinding, ReviewActivityVM>(R
         review?.results?.let {
             if(it.isEmpty()) return@let
             movieReviewAdapter.setData(it)
+        }
+    }
+
+    override fun writeToParcel(parcel: Parcel, flags: Int) {
+
+    }
+
+    override fun describeContents(): Int {
+        return 0
+    }
+
+    companion object CREATOR : Parcelable.Creator<ReviewActivity> {
+        override fun createFromParcel(parcel: Parcel): ReviewActivity {
+            return ReviewActivity(parcel)
+        }
+
+        override fun newArray(size: Int): Array<ReviewActivity?> {
+            return arrayOfNulls(size)
         }
     }
 }

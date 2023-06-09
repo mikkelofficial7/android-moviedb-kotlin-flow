@@ -14,7 +14,7 @@
         <item name="colorSecondaryVariant">@color/purple_500</item>
         <item name="colorOnSecondary">@color/purple_700</item>
         <item name="android:windowDisablePreview">false</item>
-        <item name="android:windowBackground">@null</item>
+        <item name="android:windowBackground">@color/white</item>
         <item name="android:forceDarkAllowed">false</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTopRounded</item>
         <!-- Customize your theme here. -->

@@ -6,12 +6,13 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.moviedbapp.base.BaseActivityVM
 import com.example.moviedbapp.databinding.ActivityDetailBinding
 import com.example.moviedbapp.extension.observe
-import com.example.moviedbapp.helper.EndlessRecyclerViewScrollListener
-import com.example.moviedbapp.model.response.MovieGenreResponse
+import com.example.moviedbapp.model.MovieGenreResponse
+import com.example.moviedbapp.base.baseview.BaseActivityVM
+import com.example.moviedbapp.base.helper.EndlessRecyclerViewScrollListener
 import com.example.moviedbapp.ui.detailmovie.DetailMovieActivity
+import com.example.moviedbapp.viewmodel.DetailActivityVM
 
 
 class DetailActivity: BaseActivityVM<ActivityDetailBinding, DetailActivityVM>(DetailActivityVM::class) {

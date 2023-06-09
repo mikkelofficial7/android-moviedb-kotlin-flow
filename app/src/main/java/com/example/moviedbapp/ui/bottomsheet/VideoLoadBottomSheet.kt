@@ -1,12 +1,11 @@
 package com.example.moviedbapp.ui.bottomsheet
 
-import android.R
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import com.example.moviedbapp.base.BaseBottomSheet
+import com.example.moviedbapp.base.baseview.BaseBottomSheet
 import com.example.moviedbapp.databinding.BottomsheetLoadVideoBinding
 
 

@@ -4,12 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.moviedbapp.base.BaseActivityVM
 import com.example.moviedbapp.databinding.ActivityMainBinding
 import com.example.moviedbapp.extension.observe
-import com.example.moviedbapp.model.response.Genre
-import com.example.moviedbapp.model.response.GenreResponse
+import com.example.moviedbapp.model.Genre
+import com.example.moviedbapp.model.GenreResponse
+import com.example.moviedbapp.base.baseview.BaseActivityVM
 import com.example.moviedbapp.ui.detailpage.DetailActivity
+import com.example.moviedbapp.viewmodel.MainActivityVM
 
 class MainActivity : BaseActivityVM<ActivityMainBinding, MainActivityVM>(MainActivityVM::class) {
     private val genreAdapter by lazy {

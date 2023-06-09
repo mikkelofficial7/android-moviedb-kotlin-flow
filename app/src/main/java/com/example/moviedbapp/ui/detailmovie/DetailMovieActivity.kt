@@ -8,15 +8,16 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.moviedbapp.BuildConfig
 import com.example.moviedbapp.R
-import com.example.moviedbapp.base.BaseActivityVM
-import com.example.moviedbapp.constant.DateConstant
+import com.example.moviedbapp.base.constant.DateConstant
 import com.example.moviedbapp.databinding.ActivityDetailMovieBinding
 import com.example.moviedbapp.extension.changeDateFormat
 import com.example.moviedbapp.extension.observe
-import com.example.moviedbapp.model.response.MovieDetailResponse
-import com.example.moviedbapp.model.response.MovieVideoResponse
+import com.example.moviedbapp.model.MovieDetailResponse
+import com.example.moviedbapp.model.MovieVideoResponse
+import com.example.moviedbapp.base.baseview.BaseActivityVM
 import com.example.moviedbapp.ui.bottomsheet.VideoLoadBottomSheet
 import com.example.moviedbapp.ui.reviewrating.ReviewActivity
+import com.example.moviedbapp.viewmodel.DetailMovieVM
 
 class DetailMovieActivity : BaseActivityVM<ActivityDetailMovieBinding, DetailMovieVM>(DetailMovieVM::class) {
     private val movieId by lazy {
@@ -71,7 +72,8 @@ class DetailMovieActivity : BaseActivityVM<ActivityDetailMovieBinding, DetailMov
                 Glide.with(this@DetailMovieActivity).load("${BuildConfig.BASE_IMAGE_URL}${detail.poster_path}").into(ivPoster)
 
                 tvTitle.text = detail.title
-                tvReleaseDate.text = getString(R.string.release_on, detail.release_date.changeDateFormat(DateConstant.DATE_DEFAULT, DateConstant.DATE))
+                tvReleaseDate.text = getString(R.string.release_on, detail.release_date.changeDateFormat(
+                    DateConstant.DATE_DEFAULT, DateConstant.DATE))
                 tvPopularity.text = getString(R.string.popularity, detail.popularity.toString())
                 tvReleaseStatus.text = detail.status
 

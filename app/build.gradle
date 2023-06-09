@@ -58,16 +58,7 @@ dependencies {
     implementation androidX.cardX
     implementation androidX.fragmentKtx
     implementation androidX.constraintLayout
-    implementation androidX.lifecycleExtensions
-    implementation androidX.lifecycleVmExt
     implementation androidX.material
-
-    // network
-    implementation libraries.okhttpLogging
-    implementation libraries.retrofit
-    implementation libraries.retrofitGson
-    implementation libraries.coroutineAdapter
-    implementation libraries.retrofitMoshi
 
     // image
     implementation libraries.glide
@@ -91,4 +82,6 @@ dependencies {
     // Android Testing Support Library's runner and rules
     androidTestImplementation testLibraries.junitRunner
     androidTestImplementation testLibraries.espressoCore
+
+    api project(path: ':di')
 }
