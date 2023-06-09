@@ -1,9 +1,8 @@
-package com.example.moviedbapp.base.extension
+package com.example.moviedbapp.extension
 
 import com.example.moviedbapp.base.exception.Failure
 import retrofit2.HttpException
 import java.io.IOException
-
 
 fun Throwable.getGeneralError(): Failure {
     return when (this) {
