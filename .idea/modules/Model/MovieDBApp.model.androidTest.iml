@@ -15,11 +15,11 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../model/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/d559d720262fa78b70ec8145b80ca75c/transformed/jetified-kotlinx-coroutines-android-1.4.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ccd89fab264b548319c0f30f196983e5/transformed/jetified-kotlinx-coroutines-core-jvm-1.4.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f3bcab02ac71f498bee0502e0a21de63/transformed/jetified-kotlin-stdlib-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/2f8c8c0c5e6dddf0319a59b1ad3a4570/transformed/jetified-kotlin-stdlib-common-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3248a80a7cc78e26eb243a286d339828/transformed/jetified-annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/1617649ab6cbec163ecdccbe6d7bd2c6/transformed/jetified-kotlinx-coroutines-android-1.4.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/8a769e15a4433559961f240d7b0c36c8/transformed/jetified-kotlinx-coroutines-core-jvm-1.4.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/3a4fe38a3eebec82d5479e12d8d9d3ec/transformed/jetified-kotlin-stdlib-1.7.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/8ff99d3cfa873f90db9918d91a6984ec/transformed/jetified-kotlin-stdlib-common-1.7.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/668798d509f124ed54075ddf4f915d94/transformed/jetified-annotations-13.0.jar</arg>
                 <arg>$USER_HOME$/Library/Android/sdk/platforms/android-32/android.jar</arg>
                 <arg>$USER_HOME$/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
               </args>

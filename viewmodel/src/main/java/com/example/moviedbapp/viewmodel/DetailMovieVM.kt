@@ -4,8 +4,8 @@ import androidx.lifecycle.MutableLiveData
 import com.example.moviedbapp.model.MovieDetailResponse
 import com.example.moviedbapp.model.MovieVideoResponse
 import com.example.moviedbapp.base.baseview.BaseViewModel
-import com.example.moviedbapp.base.extension.getGeneralError
 import com.example.moviedbapp.base.helper.NetworkHandler
+import com.example.moviedbapp.extension.getGeneralError
 import com.example.moviedbapp.viewmodel.usecase.MovieUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest

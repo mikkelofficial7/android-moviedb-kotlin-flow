@@ -1,11 +1,10 @@
 package com.example.moviedbapp.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.example.moviedbapp.model.GenreResponse
 import com.example.moviedbapp.base.baseview.BaseViewModel
-import com.example.moviedbapp.base.extension.getGeneralError
 import com.example.moviedbapp.base.helper.NetworkHandler
+import com.example.moviedbapp.extension.getGeneralError
 import com.example.moviedbapp.viewmodel.usecase.MovieUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest
@@ -20,7 +19,6 @@ class MainActivityVM(networkHandler: NetworkHandler, val movieUseCase: MovieUseC
 
         executeJob {
             safeScopeFun {
-                Log.d("TAF", "AAAaa ${it.message}")
                 handleFailure(it.getGeneralError())
             }.launch(Dispatchers.IO) {
                 movieUseCase.getAllMovieGenre()

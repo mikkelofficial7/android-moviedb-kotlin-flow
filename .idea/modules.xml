@@ -15,6 +15,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.main.iml" filepath="$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/DI/MovieDBApp.di.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extension/MovieDBApp.extension.iml" filepath="$PROJECT_DIR$/.idea/modules/extension/MovieDBApp.extension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extension/MovieDBApp.extension.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/extension/MovieDBApp.extension.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extension/MovieDBApp.extension.main.iml" filepath="$PROJECT_DIR$/.idea/modules/extension/MovieDBApp.extension.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extension/MovieDBApp.extension.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/extension/MovieDBApp.extension.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/MovieDBApp.model.main.iml" />

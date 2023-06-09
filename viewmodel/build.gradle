@@ -35,5 +35,5 @@ dependencies {
     implementation androidX.lifecycleVmExt
 
     api project(path: ':network')
-    implementation project(path: ':base')
+    api project(path: ':extension')
 }
