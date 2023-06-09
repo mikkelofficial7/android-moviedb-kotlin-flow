@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieDBApp</string>
+    <string name="error_network">Jaringan sedang bermasalah. Silahkan coba kembali nanti</string>
+    <string name="error_server">Server sedang bermasalah. Silahkan coba kembali nanti</string>
+    <string name="error_not_found">Data memuat tidak ditemukan</string>
+    <string name="movie_genre_title">List of movie genres</string>
+    <string name="release_on">Release on %1$s</string>
+    <string name="popularity">Popularity %1$s</string>
+    <string name="vote_average">Total vote %1$s from %2$s user(s)</string>
+    <string name="from">from: %1$s</string>
+    <string name="trailer">Movie Trailers</string>
+    <string name="no_trailer">No movie trailer is available</string>
+    <string name="review">User Reviews</string>
+    <string name="no_review">No review is available</string>
+    <string name="posted_at">posted at %1$s</string>
+    <string name="rating">%1$s/10</string>
+    <string name="see_rating">See user review and rating</string>
+    <string name="review_rating">Review Rating</string>
+</resources>

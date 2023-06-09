@@ -1,0 +1,94 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("gradle.properties")))
+
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+        applicationId configVersion.applicationId
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode configVersion.versionCode
+        versionName configVersion.name
+
+        buildConfigField "String", "BASE_URL_API", localProperties['base_api_url']
+        buildConfigField "String", "API_KEY", localProperties['api_key']
+        buildConfigField "String", "BASE_IMAGE_URL", localProperties['base_image_url']
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation kotlinDefault.stdlib
+    implementation kotlinDefault.coroutinesCore
+    implementation kotlinDefault.coroutinesAndroid
+
+    implementation androidX.appCompatX
+    implementation androidX.coreKtx
+
+    implementation androidX.recyclerX
+    implementation androidX.cardX
+    implementation androidX.fragmentKtx
+    implementation androidX.constraintLayout
+    implementation androidX.lifecycleExtensions
+    implementation androidX.lifecycleVmExt
+    implementation androidX.material
+
+    // network
+    implementation libraries.okhttpLogging
+    implementation libraries.retrofit
+    implementation libraries.retrofitGson
+    implementation libraries.coroutineAdapter
+    implementation libraries.retrofitMoshi
+
+    // image
+    implementation libraries.glide
+    implementation libraries.glideOkhttp
+    kapt libraries.glideCompiler
+
+    // DI
+    implementation libraries.koin
+    implementation libraries.koinViewmodel
+    implementation libraries.koinScope
+    implementation libraries.javaxInject
+
+    // ui
+    implementation libraries.sdp
+    implementation libraries.ssp
+
+    // Unit Test
+    testImplementation testLibraries.junit
+    testImplementation testLibraries.mockito
+
+    // Android Testing Support Library's runner and rules
+    androidTestImplementation testLibraries.junitRunner
+    androidTestImplementation testLibraries.espressoCore
+}
