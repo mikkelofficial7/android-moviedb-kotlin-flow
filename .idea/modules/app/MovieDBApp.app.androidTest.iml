@@ -16,6 +16,9 @@
               <args>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/7fd67e3f9fdfeec55570726bcf00af41/transformed/espresso-core-3.1.0-alpha3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/20e04a8cda8e9dbfbac693424616b812/transformed/runner-1.1.0-alpha3-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../di/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
+                <arg>$MODULE_DIR$/../../../viewmodel/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
+                <arg>$MODULE_DIR$/../../../extension/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
                 <arg>$MODULE_DIR$/../../../base/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/bb3afa2ec53f7bc3f3309f00df969d67/transformed/jetified-viewbinding-7.2.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/c59a30dbcd802d28a778d1b79b9a8595/transformed/material-1.6.1-api.jar</arg>
