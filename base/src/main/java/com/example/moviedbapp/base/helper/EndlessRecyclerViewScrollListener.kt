@@ -6,7 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 
 
-abstract class EndlessRecyclerViewScrollListener : RecyclerView.OnScrollListener {
+abstract class EndlessRecyclerViewScrollListener(layoutManager: LinearLayoutManager) :
+    RecyclerView.OnScrollListener() {
     // The minimum amount of items to have below your current scroll position
     // before loading more.
     private var visibleThreshold = 5
@@ -22,21 +23,7 @@ abstract class EndlessRecyclerViewScrollListener : RecyclerView.OnScrollListener
 
     // Sets the starting page index
     private val startingPageIndex = 0
-    var mLayoutManager: RecyclerView.LayoutManager
-
-    constructor(layoutManager: LinearLayoutManager) {
-        mLayoutManager = layoutManager
-    }
-
-    constructor(layoutManager: GridLayoutManager) {
-        mLayoutManager = layoutManager
-        visibleThreshold *= layoutManager.spanCount
-    }
-
-    constructor(layoutManager: StaggeredGridLayoutManager) {
-        mLayoutManager = layoutManager
-        visibleThreshold *= layoutManager.spanCount
-    }
+    var mLayoutManager: RecyclerView.LayoutManager = layoutManager
 
     private fun getLastVisibleItem(lastVisibleItemPositions: IntArray): Int {
         var maxSize = 0
@@ -50,9 +37,6 @@ abstract class EndlessRecyclerViewScrollListener : RecyclerView.OnScrollListener
         return maxSize
     }
 
-    // This happens many times a second during a scroll, so be wary of the code you place here.
-    // We are given a few useful parameters to help us work out if we need to load some more data,
-    // but first we check if we are waiting for the previous load to finish.
     override fun onScrolled(view: RecyclerView, dx: Int, dy: Int) {
         var lastVisibleItemPosition = 0
         val totalItemCount = mLayoutManager.itemCount
@@ -104,6 +88,5 @@ abstract class EndlessRecyclerViewScrollListener : RecyclerView.OnScrollListener
         loading = true
     }
 
-    // Defines the process for actually loading more data based on page
     abstract fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?)
 }
