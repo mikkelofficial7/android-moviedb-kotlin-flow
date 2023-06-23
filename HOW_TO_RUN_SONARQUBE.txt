@@ -1,0 +1,8 @@
+Token:
+sqp_ce18954d455063f558c917a6bc0ee260856bcc9c
+
+./gradlew sonar \
+  -Dsonar.projectKey=mikkelseptiano \
+  -Dsonar.projectName='moviedb-kotlin-flow' \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=sqp_ce18954d455063f558c917a6bc0ee260856bcc9c
